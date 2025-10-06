@@ -1,4 +1,3 @@
-````markdown
 # NudeNet NSFW Tagging API
 
 A simple REST API built with [Flask](https://flask.palletsprojects.com/) and [NudeNet](https://github.com/notAI-tech/NudeNet) for detecting and tagging NSFW content in images.  
@@ -21,8 +20,7 @@ Supports **file uploads** and **remote image URLs** (single or multiple).
 ### Health check
 ```bash
 GET /health
-````
-
+```
 Returns:
 
 ```json
