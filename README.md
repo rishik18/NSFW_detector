@@ -1,5 +1,3 @@
-Here’s the **single file README.md** — you can copy-paste this directly into your repo:
-
 ````markdown
 # NudeNet NSFW Tagging API
 
