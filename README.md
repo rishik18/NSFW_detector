@@ -42,7 +42,7 @@ curl -X POST http://localhost:8080/detect \
   -F "file=@/path/to/image.jpg"
 ```
 
-### Detect NSFW (multiple files)
+### Detect NSFW (multiple files) -- To be added
 
 ```bash
 POST /detect
@@ -61,7 +61,7 @@ Body:
 }
 ```
 
-### Detect NSFW (multiple URLs)
+### Detect NSFW (multiple URLs)  -- To be added
 
 ```bash
 POST /detect
