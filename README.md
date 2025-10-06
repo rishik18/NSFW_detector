@@ -42,14 +42,6 @@ curl -X POST http://localhost:8080/detect \
   -F "file=@/path/to/image.jpg"
 ```
 
-### Detect NSFW (multiple files) -- To be added
-
-```bash
-POST /detect
-Content-Type: multipart/form-data
-Form field: files=@/path/to/a.jpg & files=@/path/to/b.png
-```
-
 ### Detect NSFW (single URL)
 
 ```bash
@@ -58,20 +50,6 @@ Content-Type: application/json
 Body:
 {
   "image_url": "https://example.com/image.jpg"
-}
-```
-
-### Detect NSFW (multiple URLs)  -- To be added
-
-```bash
-POST /detect
-Content-Type: application/json
-Body:
-{
-  "image_urls": [
-    "https://example.com/a.jpg",
-    "https://example.com/b.png"
-  ]
 }
 ```
 
@@ -145,25 +123,6 @@ docker run --rm -p 8080:8080 nsfw-tagging-api
 ```bash
 curl -X POST http://127.0.0.1:8080/detect \
   -F "file=@/path/to/image.jpg"
-```
-
----
-
-## Deployment (Fly.io Example)
-
-```bash
-flyctl launch        # detect port 8080
-flyctl deploy
-```
-
-Example `fly.toml` snippet:
-
-```toml
-[http_service]
-  internal_port = 8080
-  auto_stop_machines = true
-  auto_start_machines = true
-  min_machines_running = 0
 ```
 
 ---
